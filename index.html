@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BrAIn Flux | AI and automation agency</title>
+  <meta name="description" content="BrAIn Flux designs and builds AI agents and workflow automations that take repetitive work off your team's plate.">
+  <meta name="theme-color" content="#ECEFF4">
+
+  <!-- Favicon: the "AI" chip from the wordmark, inlined so no extra file is needed -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2311142E'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='30' font-weight='700' text-anchor='middle' fill='%23ECEFF4'%3EAI%3C/text%3E%3C/svg%3E">
+
+  <!-- Single typeface: Bricolage Grotesque (variable: weight, width, optical size) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap" rel="stylesheet">
+
+  <!-- Marks the page as JS-enabled so the mobile menu only collapses when it can be reopened -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="#top" aria-label="BrAIn Flux, back to top">
+        Br<span class="chip">AI</span>n Flux
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__label">Menu</span>
+      </button>
+
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#services">Services</a></li>
+          <li><a class="nav__link" href="#process">How we work</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn--small" href="#contact">Book a free audit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container">
+
+        <!-- Wordmark: "AI" sits in a dark chip inside "BrAIn"; "Flux" starts directly under the chip.
+             The letters of "Flux" ripple in weight once on load and again on hover (see main.js). -->
+        <div class="wordmark" role="img" aria-label="BrAIn Flux">
+          <div class="wordmark__row" aria-hidden="true">
+            <span class="wordmark__heavy">Br</span><span class="chip chip--xl">AI</span><span class="wordmark__heavy">n</span>
+          </div>
+          <div class="wordmark__row" aria-hidden="true">
+            <!-- Invisible spacer, same width as "Br", pushes "Flux" under the chip -->
+            <span class="wordmark__heavy wordmark__spacer">Br</span><span class="wordmark__flux" data-wave>Flux</span>
+          </div>
+        </div>
+
+        <div class="hero__body">
+          <h1 class="hero__headline">Automation that gives your team its week back.</h1>
+          <div class="hero__copy">
+            <p>BrAIn Flux designs and builds AI agents and workflow automations that take over repetitive work, so your people can spend their time on the work that needs them.</p>
+            <div class="hero__actions">
+              <a class="btn" href="#contact">Book a free audit</a>
+              <a class="btn btn--ghost" href="#services">See what we build</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <!-- To add a service, copy one <li class="service"> block. -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container services">
+        <div class="services__intro">
+          <h2 class="section-title" id="services-title">What we build</h2>
+          <p class="section-lede">Three kinds of work, each scoped to a process your team already runs.</p>
+        </div>
+
+        <ul class="services__list">
+          <li class="service">
+            <h3 class="service__title">AI agents</h3>
+            <p class="service__text">Assistants that answer customer questions, sort incoming requests and draft replies. A person approves anything that matters.</p>
+          </li>
+          <li class="service">
+            <h3 class="service__title">Workflow automation</h3>
+            <p class="service__text">Hand-offs, approvals, reports and data entry run on their own across the tools you already use.</p>
+          </li>
+          <li class="service">
+            <h3 class="service__title">Integrations and data</h3>
+            <p class="service__text">We connect your apps, clean up the data moving between them, and give you a view of what is running and what it saves.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS (dark accent band) ============ -->
+    <!-- This is a true sequence, so the steps are numbered. -->
+    <section class="section section--dark" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <h2 class="section-title" id="process-title">How we work</h2>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">1</span>
+            <h3 class="step__title">Audit</h3>
+            <p class="step__text">We map how work moves through your team and pick the tasks worth automating first.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">2</span>
+            <h3 class="step__title">Build</h3>
+            <p class="step__text">We build the automation or agent and test it on your real data, with you reviewing along the way.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">3</span>
+            <h3 class="step__title">Launch</h3>
+            <p class="step__text">We roll it out to your team, train the people using it and set up alerts for when something needs attention.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">4</span>
+            <h3 class="step__title">Improve</h3>
+            <p class="step__text">We watch how it performs, fix what falls short and move on to the next task on the list.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT / CTA ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="cta">
+          <h2 class="cta__title" id="contact-title">Tell us what slows your team down.</h2>
+          <p class="cta__text">Send us a short description of the task. We will reply within two business days with whether it can be automated and what it would take.</p>
+          <!-- TODO: replace the placeholder address below with your real email -->
+          <a class="btn btn--light" href="mailto:hello@brainflux.example?subject=Free%20audit%20request">Book a free audit</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <a class="logo" href="#top" aria-label="BrAIn Flux, back to top">Br<span class="chip">AI</span>n Flux</a>
+      <p class="site-footer__legal">&copy; <span id="year">2026</span> BrAIn Flux. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+  </html>
